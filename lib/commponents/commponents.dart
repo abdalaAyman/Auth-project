@@ -40,16 +40,30 @@ class DefaultFormField extends StatelessWidget {
             20,
           ),
         ),
-        fillColor: const Color.fromARGB(255, 249, 247, 249),
+        fillColor: const Color.fromARGB(255, 255, 255, 255),
         filled: true,
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(
             20,
           ),
           borderSide: const BorderSide(
-              color: Color.fromARGB(255, 249, 247, 249), width: 2),
+              color: Color.fromARGB(255, 171, 166, 171), width: 2),
         ),
+        focusedErrorBorder:OutlineInputBorder(
+          borderSide: const BorderSide(
+              color: Color.fromARGB(255, 47, 84, 205), width: 2),
+          borderRadius: BorderRadius.circular(
+            20,
+          ),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(
+            20,),
+          borderSide: const BorderSide(
+        color: Color.fromARGB(255, 255, 0, 0), width: 2),
       ),
+
+      )
     );
   }
 }
